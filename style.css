@@ -19,6 +19,7 @@ h2 {
 
 p {
   font-size: 18px;
+  width: 400px;
   border-style: solid;
   border-color: orange;
   padding: 10px;
