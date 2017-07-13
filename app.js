@@ -77,7 +77,36 @@ while(x < 4){
   }else if(age > 27){
     alert('Sorry I am younger try again');
     x++;
+  }if (x === 4){
+    alert('Sorry you are out of guesses!')
   }
 }
+
+
+var guessesRemaining = 6;
+var ansCompanies = ['microsoft', 'amazon'];
+
+while(guessesRemaining > 0){
+
+  var guessCompanies = prompt('What companies would I like to work for?');
+  for(var i = 0; i < ansCompanies.length; i++){
+    if(guessCompanies.toLowerCase() === ansCompanies[i].toLowerCase()){
+      alert('correct');
+      scoreCard.push('Q7');
+      y = -1;
+      break;
+    }
+  } if(guessesRemaining > 0){
+    alert('guess again');
+    guessesRemaining--;
+  }
+}
+
+
+
+
+
+
+
 
 alert('You got ' + scoreCard.length + ' out of 7 correct');
