@@ -8,6 +8,7 @@ alert('Do you want to play a guessing game?? Answer "yes" or "no."');
 
 var scoreCard = []
 
+function warCraft(){
 var gamingWow = prompt('Have I played over 1,000 hours of World of Warcraft?').toLowerCase();
 
 if (gamingWow === 'yes' || gamingWow === 'y'){
@@ -18,7 +19,10 @@ if (gamingWow === 'yes' || gamingWow === 'y'){
   alert('Incorrect');
   console.log('The user said ' + gamingWow + ' to if I had played 1000 hours of Wow.');
 }
+}
+warCraft();
 
+function bunnies(){
 var pets = prompt('Do I have two cute fluffy bunnies as pets?').toLowerCase();
 
 if (pets === 'yes' || pets === 'y'){
@@ -29,7 +33,10 @@ if (pets === 'yes' || pets === 'y'){
   alert('My bunnies are sad!');
   console.log('The user said ' + pets + ' to if I two fluffy bunnies.');
 }
+}
+bunnies()
 
+function shirtQuestion(){
 var shirts = prompt('Do I own a closet full of vacation shirts?').toLowerCase();
 
 if (shirts === 'yes' || shirts === 'y'){
@@ -39,8 +46,11 @@ if (shirts === 'yes' || shirts === 'y'){
 }else{
   alert('Surprise the answer is yes!!');
   console.log('The user said ' + shirts + ' to do I have a closet of vacation shirts.');
+  }
 }
+shirtQuestion()
 
+function fish(){
 var bigFish = prompt('Have I caught a 130lb Alaskan Halibut?').toLowerCase();
 
 if (bigFish === 'yes' || bigFish === 'y'){
@@ -51,7 +61,10 @@ if (bigFish === 'yes' || bigFish === 'y'){
   alert('I did in fact catch one that big');
   console.log('The user said ' + bigFish + ' to have I caught a !30lb Alaskan Halibut.');
 }
+}
+fish()
 
+function coffee(){
 var drinkCoffee = prompt('Have I ever had a cup of coffee?').toLowerCase();
 
 if (drinkCoffee === 'yes' || drinkCoffee === 'y'){
@@ -62,7 +75,10 @@ if (drinkCoffee === 'yes' || drinkCoffee === 'y'){
   console.log('The user said ' + drinkCoffee + ' to if I have ever had a cup of coffee.');
   scoreCard.push('Q5');
  }
+}
+coffee()
 
+function age(){
 var x = 0;
 
 while(x < 4){
@@ -82,8 +98,10 @@ while(x < 4){
     alert('Sorry you are out of guesses!')
   }
 }
+}
+age()
 
-
+function companies(){
 var guessesRemaining = 6;
 var ansCompanies = ['microsoft', 'amazon'];
 
@@ -106,5 +124,6 @@ while(guessesRemaining > 0){
 
   }
 }
-
+}
+companies();
 alert('You got ' + scoreCard.length + ' out of 7 correct');
