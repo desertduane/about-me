@@ -1,6 +1,6 @@
 'use strict';
 
-// 5 about-me question prompts
+//5 about-me question prompts
 
 
 
@@ -61,12 +61,13 @@ if (drinkCoffee === 'yes' || drinkCoffee === 'y'){
   alert('Most people will not believe I have not had a cup of coffee.');
   console.log('The user said ' + drinkCoffee + ' to if I have ever had a cup of coffee.');
   scoreCard.push('Q5');
-}
+ }
 
 var x = 0;
 
 while(x < 4){
   var age = parseInt(prompt('How old am I?'));
+
   if(age === 27){
     alert('You are correct!');
     scoreCard.push('Q6');
@@ -87,26 +88,23 @@ var guessesRemaining = 6;
 var ansCompanies = ['microsoft', 'amazon'];
 
 while(guessesRemaining > 0){
+  var guessCompanies = prompt('What Seattle companies would I like to work for?');
 
-  var guessCompanies = prompt('What companies would I like to work for?');
   for(var i = 0; i < ansCompanies.length; i++){
     if(guessCompanies.toLowerCase() === ansCompanies[i].toLowerCase()){
-      alert('correct');
+      alert('Yes I would like to work for either Amazon or Microsoft.');
       scoreCard.push('Q7');
-      y = -1;
+      guessesRemaining = -1;
       break;
     }
   } if(guessesRemaining > 0){
-    alert('guess again');
     guessesRemaining--;
+    alert('Sorry you have '+ guessesRemaining + ' guesses remaining.' );
+
+  }if(guessesRemaining === 0){
+    alert('To bad you are out of guesses.');
+
   }
 }
-
-
-
-
-
-
-
 
 alert('You got ' + scoreCard.length + ' out of 7 correct');
