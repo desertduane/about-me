@@ -27,13 +27,20 @@ h2 {
   color: #992677;
 }
 ul {
+  float: left;
   display: inline-block;
   width: 175px;
 }
 
 ol {
+  float: left;
   display: inline-block;
   width: 175px;
+}
+
+.gif {
+  display: inline;
+  width: 300px;
 }
 
 p {
@@ -42,4 +49,12 @@ p {
   border-color: #5cdeed;
   padding: 10px;
   text-indent: 50px;
+}
+footer {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  border-style: solid;
+  border-color: #5cdeed
+
 }
