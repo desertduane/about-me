@@ -1,27 +1,45 @@
 * {
   background-color: grey;
 }
+img {
+  max-width: : 960px;
+  max-height: 381px;
+  min-height: 320px;
+  min-width: 128;
+
+}
+
 
 h1 {
+  margin-left: 400px;
+  border-radius: 100px;
+  width: 300px;
   text-align: center;
+  border-width: 20px;
   font-size: 40px;
+  border-style: solid;
+  border-color: #5cdeed
+
 }
 h2 {
   font-style: italic;
   text-decoration: underline;
   color: #992677;
 }
-#goals {
-  text-align: left;
-  font-style: italic;
-  color: #629dfc
+ul {
+  display: inline-block;
+  width: 175px;
+}
+
+ol {
+  display: inline-block;
+  width: 175px;
 }
 
 p {
   font-size: 18px;
-  width: 400px;
   border-style: solid;
-  border-color: orange;
+  border-color: #5cdeed;
   padding: 10px;
   text-indent: 50px;
 }
